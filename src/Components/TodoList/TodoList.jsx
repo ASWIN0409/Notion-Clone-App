@@ -27,7 +27,7 @@ function TodoList() {
         <div>
             <div className="flex justify-center w-full h-full gap-4 p-6">
                 <input
-                    className="w-[80%] h-10 p-2 border-[2px] dark:bg-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+                    className="w-[80%] h-10 p-2 border-[2px] text-[#3e3e3e] dark:bg-[#3E3E3E] dark:text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
                     type="text"
                     value={task}
                     onChange={(e) => setTask(e.target.value)}
@@ -35,15 +35,15 @@ function TodoList() {
 
                 <button
                     onClick={handleAddTask}
-                    className="h-10 p-2 font-semibold text-white bg-blue-500 rounded-md dark:bg-gray-900 dark:hover:bg-gray-600 dark:text-white hover:bg-blue-600">
-                    Add Task
+                    className="h-10 p-2 font-semibold text-white bg-blue-500 rounded-md dark:bg-[#3E3E3E] dark:hover:bg-[#2f2f2f] dark:text-white hover:bg-blue-600">
+                    Add
                 </button>
             </div>
 
             <ul>
                 {tasks.map((item, index) => (
                     <li 
-                    className="flex items-center justify-between p-2 m-4 rounded-md bg:gray-100"
+                    className="flex items-center justify-between p-2 m-4 text-[#3e3e3e] rounded-md dark:text-gray-300"
                     key={index}>
                         <span
                             onClick={() => toggleTask(index)}

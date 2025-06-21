@@ -5,6 +5,7 @@ import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import CoinsCard from "../../../Components/CardComponents/CoinsCard/CoinsCard";
 import CoinsPageButton from "../../../Components/Button/CoinsPageButton";
 import { GlobalContext } from "../../../Context/GlobalContext";
+import CoinsMobileCard from "../../../Components/CardComponents/CoinsMobileCard";
 
 function CoinsPage() {
 
@@ -24,7 +25,7 @@ function CoinsPage() {
 
     function handleClick() {
         setToggle(!toggle);
-        setCurrency((prevCurrency) => (prevCurrency === "inr"? "usd": "inr"));
+        setCurrency((prevCurrency) => (prevCurrency === "inr" ? "usd" : "inr"));
     }
 
     const { data, isLoading, isError, error } = useQuery({
@@ -44,16 +45,24 @@ function CoinsPage() {
                 <h1 className="text-3xl font-black text-center text-yellow-500">Crypto Currrency</h1>
             </div>
 
-            <div className="flex list-none border-[2px] border-gray-700 w-[90%] mx-auto text-center bg-yellow-500 font-bold p-2 rounded-lg">
-                <li className="basis-[25%]">Currency</li>
-                <li onClick={handleClick} className="basis-[25%] cursor-pointer">Current Price {(!toggle) ? <span>(₹)</span> : <span>($)</span>}</li>
-                <li className="basis-[25%]">Price change(24hrs)</li>
-                <li className="basis-[25%]">High-24hrs/Low-24hrs</li>
+            <div className="block md:hidden">
+                {data?.map((coin) => (
+                    <CoinsMobileCard key={coin.id} coin={coin} />
+                ))}
             </div>
 
-            {data?.map((coin) => (
-                <CoinsCard key={coin.id} coin={coin} />
-            ))}
+            <div className="hidden md:block">
+                <div className="flex list-none border-[2px] border-gray-700 w-[90%] mx-auto text-center bg-yellow-500 font-bold p-2 rounded-lg">
+                    <li className="basis-[25%]">Currency</li>
+                    <li onClick={handleClick} className="basis-[25%] cursor-pointer">Current Price {(!toggle) ? <span>(₹)</span> : <span>($)</span>}</li>
+                    <li className="basis-[25%]">Price change(24hrs)</li>
+                    <li className="basis-[25%]">High-24hrs/Low-24hrs</li>
+                </div>
+
+                {data?.map((coin) => (
+                    <CoinsCard key={coin.id} coin={coin} />
+                ))}
+            </div>
 
             <div className="flex items-center justify-center gap-6 m-9">
                 <CoinsPageButton

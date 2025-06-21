@@ -19,8 +19,10 @@ export default function GlobalProvider({ children }) {
             setUser(currentUser);
         });
         return () => unsubscribe();
-    }, []);    
+    }, []);
 
+
+    const [sidebarToggle, setSidebarToggle] = useState(false);   //to toggle sidebar in small screen
 
     const [currency, setCurrency] = useState("inr"); //Currency Context
 
@@ -44,7 +46,7 @@ export default function GlobalProvider({ children }) {
     }
 
     return (
-        <GlobalContext.Provider value={{ formData, setFormData, user, currency, setCurrency, theme, toggleTheme }}>
+        <GlobalContext.Provider value={{ formData, setFormData, user, currency, setCurrency, theme, toggleTheme, sidebarToggle, setSidebarToggle }}>
             {children}
         </GlobalContext.Provider>
     );

@@ -4,13 +4,13 @@ function WelcomePage() {
 
     return (
         <div 
-        className="flex flex-col items-center justify-center h-full gap-10">
+        className="flex flex-col items-center justify-center dark:text-gray-300 text-[#3E3E3E] h-full gap-10">
             <WavingHandIcon 
             fontSize='large'
              className='text-yellow-400'/>
 
             <h1 
-            className='text-6xl font-black'
+            className='text-6xl font-black '
             contentEditable={true}>
                 Welcome to Notion!
             </h1>

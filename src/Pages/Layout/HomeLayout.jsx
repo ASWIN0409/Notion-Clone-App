@@ -8,9 +8,9 @@ function HomeLayout() {
     const { user } = useContext(GlobalContext);
 
     return (
-        <div className="flex min-h-screen dark:text-white dark:bg-black">
+        <div className="flex min-h-screen dark:text-gray-300 dark:bg-[#1F1F1F]">
             <Sidebar />
-            <div className="z-0 w-full">
+            <div className="z-10 w-full">
                 <Outlet />
             </div>
         </div>

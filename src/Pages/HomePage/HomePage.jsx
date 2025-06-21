@@ -27,12 +27,12 @@ function HomePage() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center w-[80%] mx-auto h-screen m-4 font-mono ">
+        <div className="flex flex-col items-center w-[80%] dark:text-gray-300 text-[#3E3E3E] mx-auto h-screen m-4 font-mono ">
             
             <h3 className="my-10 font-mono text-2xl font-bold md:text-4xl lg:text-5xl">{greeting},{user.displayName}</h3>
             <textarea
                 placeholder="Ask or find anything from your Notion..."
-                className="block w-3/4 p-8 mx-auto mb-10 text-lg border border-gray-200 resize-none md:mb-12 lg:mb-20 dark:bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-400"
+                className="block text-[#3E3E3E] w-3/4 p-8 mx-auto mb-10 text-lg border border-gray-200 resize-none md:mb-12 lg:mb-20 dark:bg-[#3E3E3E] rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-400"
             />
 
             <div className="grid grid-cols-2 gap-x-2 md:grid-cols-3 lg:grid-cols-5 gap-y-9 justify-around w-[80%] mx-auto  dark:text-black">

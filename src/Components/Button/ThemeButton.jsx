@@ -8,7 +8,7 @@ function ThemeButton() {
     return (
         <button
             onClick={toggleTheme}
-            className="px-4 py-2 bg-gray-300 rounded dark:text-white dark:bg-gray-900"
+            className="px-4 py-2 bg-gray-300 rounded dark:text-white dark:hover:bg-[#2f2f2f] dark:bg-[#3e3e3e]"
         >
             {theme === "light" ? "dark" : "light"}
         </button>

@@ -11,10 +11,10 @@ function ProfileDropdown() {
     const navigate = useNavigate();
 
     return (
-        <div className="absolute z-50 w-[32vh] border-gray-300 dark:text-white dark:bg-gray-900 border rounded-lg h-[29vh] bg-white top-12 left-3 p-2">
+        <div className="absolute z-50 w-[32vh] border-gray-300  dark:text-gray-300 dark:bg-[#262626] border rounded-lg h-[29vh] bg-white top-12 left-3 p-2">
 
             <div className="flex gap-3 p-2 border rounded-lg border-b-gray-400 dark:text-white">
-                <div className="h-12 w-full text-center text-3xl bg-gray-300 basis-[20%] rounded-md border-[3px]">{`${user?.displayName?.charAt(0).toUpperCase()}`}</div>
+                <div className="h-11 w-full text-center text-3xl bg-gray-300 text-gray-900 basis-[20%] rounded-md border-[3px]">{`${user?.displayName?.charAt(0).toUpperCase()}`}</div>
 
                 <div className="basis-[80%] ">
                     <h4 className="text-md">{`${user?.displayName}'s Notion`}</h4>
