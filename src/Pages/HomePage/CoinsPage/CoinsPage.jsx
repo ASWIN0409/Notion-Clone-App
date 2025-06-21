@@ -5,7 +5,7 @@ import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import CoinsCard from "../../../Components/CardComponents/CoinsCard/CoinsCard";
 import CoinsPageButton from "../../../Components/Button/CoinsPageButton";
 import { GlobalContext } from "../../../Context/GlobalContext";
-import CoinsMobileCard from "../../../Components/CardComponents/CoinsMobileCard";
+import CoinsMobileCard from "../../../Components/CardComponents/CoinsMobileCard/CoinsMobileCard";
 
 function CoinsPage() {
 
@@ -52,7 +52,7 @@ function CoinsPage() {
             </div>
 
             <div className="hidden md:block">
-                <div className="flex list-none border-[2px] border-gray-700 w-[90%] mx-auto text-center bg-yellow-500 font-bold p-2 rounded-lg">
+                <div className="flex list-none w-[90%] mx-auto text-center bg-yellow-500 font-bold p-2 rounded-lg">
                     <li className="basis-[25%]">Currency</li>
                     <li onClick={handleClick} className="basis-[25%] cursor-pointer">Current Price {(!toggle) ? <span>(₹)</span> : <span>($)</span>}</li>
                     <li className="basis-[25%]">Price change(24hrs)</li>

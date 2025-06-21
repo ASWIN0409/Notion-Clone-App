@@ -8,9 +8,9 @@ function ThemeButton() {
     return (
         <button
             onClick={toggleTheme}
-            className="px-4 py-2 bg-gray-300 rounded dark:text-white dark:hover:bg-[#2f2f2f] dark:bg-[#3e3e3e]"
+            className="px-4 py-2 text-[#595555] rounded-md cursor-pointer bg-gray-200 dark:hover:bg-[#2F2F2F] dark:text-gray-300 dark:bg-[#262626] hover:bg-gray-300"
         >
-            {theme === "light" ? "dark" : "light"}
+            {theme === "light" ? "Dark Mode" : "Light Mode"}
         </button>
     );
 }

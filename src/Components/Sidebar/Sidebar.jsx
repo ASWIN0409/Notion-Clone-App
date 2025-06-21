@@ -3,7 +3,6 @@ import { GlobalContext } from "../../Context/GlobalContext";
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
-import NoteAddOutlinedIcon from '@mui/icons-material/NoteAddOutlined';
 import WavingHandOutlinedIcon from '@mui/icons-material/WavingHandOutlined';
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 import FlatwareOutlinedIcon from '@mui/icons-material/FlatwareOutlined';
@@ -12,6 +11,7 @@ import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import AutoDeleteOutlinedIcon from '@mui/icons-material/AutoDeleteOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
+import EventNoteIcon from '@mui/icons-material/EventNote';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { useNavigate } from "react-router-dom";
@@ -20,7 +20,7 @@ import SidebarButton from "../Button/SidebarButton";
 import MobileSidebar from "./MobileSidebar";
 
 
-function Sidebar() {
+function DesktopSidebar() {
 
     const { user } = useContext(GlobalContext);
     const [profileToggle, setProfileToggle] = useState(false);
@@ -71,7 +71,7 @@ function Sidebar() {
 
                 <div
                     onMouseDown={handleMouseDown}
-                    className="absolute right-0 h-full border-[2px] border-[#262626] dark:hover:bg-gray-500 dark:bg-[#262626] hover:cursor-ew-resize">
+                    className="absolute right-0 h-full border-[2px] border-white dark:border-[#262626] dark:hover:bg-gray-500 dark:bg-[#262626] hover:cursor-ew-resize">
                 </div>
 
                 <div>
@@ -114,7 +114,7 @@ function Sidebar() {
                     />
                     <SidebarButton
                         onClick={() => navigate("todo")}
-                        icon={NoteAddOutlinedIcon}
+                        icon={EventNoteIcon}
                         className="text-red-300"
                         text="To-do List"
                     />
@@ -172,4 +172,4 @@ function Sidebar() {
     );
 }
 
-export default Sidebar;
+export default DesktopSidebar;

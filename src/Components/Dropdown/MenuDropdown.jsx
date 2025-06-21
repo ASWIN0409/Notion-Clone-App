@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
-import NoteAddOutlinedIcon from '@mui/icons-material/NoteAddOutlined';
 import WavingHandOutlinedIcon from '@mui/icons-material/WavingHandOutlined';
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 import FlatwareOutlinedIcon from '@mui/icons-material/FlatwareOutlined';
@@ -16,7 +15,7 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import ProfileDropdown from "./ProfileDropdown";
+import EventNoteIcon from '@mui/icons-material/EventNote';
 
 function MenuDropdown() {
 
@@ -25,7 +24,7 @@ function MenuDropdown() {
     const navigate = useNavigate();
 
     return (
-        <div className="dark:hover:bg-[#2F2F2F] dark:text-gray-300 dark:bg-[#262626] hover:bg-gray-100">
+        <div className="dark:hover:bg-[#2F2F2F] dark:text-gray-300 transition ease-in-out dark:bg-[#262626] hover:bg-gray-100">
             {/* 1st section  */}
             <div className="flex justify-start gap-3 p-2 mx-2 my-2 text-[#2f2f2f] hover:bg-gray-100 rounded-md cursor-pointer dark:hover:bg-[#2F2F2F] dark:text-gray-300 dark:bg-[#262626]">
                 <div className="h-7 text-center border-[3px]  text-gray-900 bg-gray-300 rounded-md w-7">{`${user?.displayName?.charAt(0).toUpperCase()}`}</div>
@@ -64,7 +63,7 @@ function MenuDropdown() {
             />
             <SidebarButton
                 onClick={() => navigate("todo")}
-                icon={NoteAddOutlinedIcon}
+                icon={EventNoteIcon}
                 className="text-red-300"
                 text="To-do List"
             />
