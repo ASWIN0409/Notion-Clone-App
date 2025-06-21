@@ -13,6 +13,7 @@ import SettingsPage from "../Pages/HomePage/SettingsPage";
 import TrashPage from "../Pages/HomePage/TrashPage";
 import CoinsPage from "../Pages/HomePage/CoinsPage/CoinsPage";
 import CoinDetailPage from "../Pages/HomePage/CoinsPage/CoinDetailPage";
+import AboutUsPage from "../Pages/LandingPage/AboutusPage";
 
 const LandingPage = lazy(() => import("../Pages/LandingPage/LandingPage"));
 const LoginPage = lazy(() => import("../Pages/EntryPage/LoginPage"));
@@ -24,6 +25,7 @@ function Routing() {
             <Routes>
                 <Route path="/" element={<MainLayout />} >
                     <Route index element={<LandingPage />} />
+                    <Route path="/aboutus" element={<AboutUsPage />} />
                 </Route>
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />

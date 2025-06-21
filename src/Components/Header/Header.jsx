@@ -3,11 +3,13 @@ import Button from "../Button/Button";
 import NavButton from "../Button/NavButton";
 import NotionDropdown from "../Dropdown/NotionDropdown";
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from "react-router-dom";
 
 function Header() {
 
     const [isOpen, setIsOpen] = useState(false);
     const [toggleMenu, setToggleMenu] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <header className="sticky top-0 flex items-center justify-between w-full h-16 border-b-2 border-gray-200 md:justify-between bg-gray-50">
@@ -15,16 +17,20 @@ function Header() {
             {/* left nav  */}
             <div className="w-[10%] h-full">
                 <div className="flex items-center justify-center w-12 h-12 mt-2 ml-4">
-                    <img className="w-full h-full ease-in-out cursor-pointer hover:animate-pulse" src="notion1.png" alt="" />
+                    <img
+                        onClick={() => navigate("/")}
+                        className="w-full h-full ease-in-out cursor-pointer hover:animate-pulse" src="notion1.png" alt="" />
                 </div>
             </div>
 
             {/* center nav  */}
             <div className="w-[70%] h-full items-center hidden lg:block">
                 <ul className="relative flex items-center justify-center w-full h-full gap-4 group">
-                    <NavButton
-                        onClick={() => setIsOpen(!isOpen)}
-                        text="Notion ▾" />
+                    <p
+                        className="p-2 text-sm font-thin list-none rounded-md cursor-pointer hover:bg-gray-200 "
+                        onClick={() => setIsOpen(!isOpen)}>
+                        Notion ▾
+                    </p>
                     {
                         isOpen && <NotionDropdown />
                     }

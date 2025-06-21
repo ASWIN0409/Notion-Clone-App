@@ -11,10 +11,10 @@ import Card2 from "../../Components/CardComponents/Card2/Card2";
 function LandingPage() {
     
     return (
-        <>
+        <main className="w-[90vw] mx-auto h-full ">
             {/* 1st section */}
             <div className="flex flex-col w-full h-full mx-auto bg-white border-gray-300 lg:flex-row">
-                <div className="basis-[50%] p-10 lg:p-20">
+                <div className="basis-[50%] p-10 lg:p-16">
                     <h1 className="text-4xl font-bold lg:text-6xl">The AI workspace that works for you.</h1>
                     <p className="text-lg lg:text-2xl my-7">One place where teams find every answer, automate the busywork, and get projects done.</p>
                     <div className="flex flex-col w-32 gap-4 ">
@@ -44,21 +44,21 @@ function LandingPage() {
             </div>
 
             {/* 3rd section */}
-            <div className="flex justify-center w-full h-full gap-4 p-4">
-                <div style={{ backgroundColor: "#faebe1" }} className="border rounded-2xl hover:border-[#dfb297]  basis-[45%] p-8">
+            <div className="flex justify-center w-full h-full gap-4 p-2 lg:p-4">
+                <div style={{ backgroundColor: "#faebe1" }} className="border cursor-pointer rounded-2xl hover:border-[#dfb297]  basis-[45%] p-4 lg:p-8">
                     <MicRoundedIcon />
                     <Card2 heading="AI Meeting Notes" description="Perfect notes every time." />
                 </div>
 
-                <div className="border bg-blue-100 rounded-2xl hover:border-blue-900  basis-[45%] p-8">
+                <div className="border bg-blue-100 rounded-2xl hover:border-blue-900 cursor-pointer basis-[45%] p-4 lg:p-8">
                     <SearchRoundedIcon />
                     <Card2 heading="Enterprise Search" description="One Search for everything." />
                 </div>
             </div>
 
             {/* 4th section */}
-            <div className="flex justify-center w-full h-full gap-4 p-4 ">
-                <div className="border bg-green-100 rounded-2xl hover:border-green-700  basis-[90%] p-8">
+            <div className="flex justify-center w-full h-full gap-4 p-2">
+                <div className="border bg-green-100 rounded-2xl hover:border-green-700 cursor-pointer basis-[90%] p-4 lg:p-8">
                     <AdsClickOutlinedIcon />
                     <Card2 heading="Projects" description="Keep every plan on track." />
                 </div>
@@ -66,12 +66,12 @@ function LandingPage() {
 
             {/* 5th section */}
             <div className="flex justify-center w-full h-full gap-4 p-4">
-                <div className="border bg-pink-100 rounded-2xl hover:border-pink-600  basis-[45%] p-8">
+                <div className="border bg-pink-100 cursor-pointer rounded-2xl hover:border-pink-600  basis-[45%] p-4 lg:p-8">
                     <EmailRoundedIcon />
                     <Card2 heading="Notion Mail" description="The inbox that thinks like you." />
                 </div>
 
-                <div className="border bg-yellow-100 rounded-2xl hover:border-yellow-500  basis-[45%] p-8">
+                <div className="border bg-yellow-100 rounded-2xl cursor-pointer hover:border-yellow-500  basis-[45%] p-4 lg:p-8">
                     <BusinessRoundedIcon />
                     <Card2 heading="Business-in-a-box" description="Run your entire company." />
                 </div>
@@ -99,7 +99,7 @@ function LandingPage() {
                 </div>
                 <hr />
             </div>
-        </>
+        </main>
     );
 }
 

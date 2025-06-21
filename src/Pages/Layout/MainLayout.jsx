@@ -6,9 +6,7 @@ function MainLayout() {
     return (
         <>
             <Header />
-            <main className="w-[90vw] mx-auto h-full">
-                <Outlet />
-            </main>
+            <Outlet />
             <Footer />
         </>
     );

@@ -66,7 +66,7 @@ function Footer() {
                     <Para text="Enterprise" />
                     <Para text="Small business" />
                     <Para text="Personal" />
-                    <Link to="/explore"><HeadingTag heading="Explore more →" /></Link>
+                    <Link to="/aboutus"><HeadingTag heading="Explore more →" /></Link>
 
                 </div>
 
