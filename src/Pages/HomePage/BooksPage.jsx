@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import fetchBooks from "../../api/fetchBooks";
+import fetchBooks from "../../Services/fetchBooks";
 import BooksCard from "../../Components/CardComponents/BooksCard/BooksCard";
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 

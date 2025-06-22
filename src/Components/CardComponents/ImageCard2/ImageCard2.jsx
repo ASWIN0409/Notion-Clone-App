@@ -4,7 +4,7 @@ function ImageCard2({ src, content }) {
             <div className="basis-[50%]">
                 <img className="w-full h-full" src={src} alt="" />
             </div>
-            <p className="basis-[50%] tracking-wider leading-loose">{content}</p>
+            <p className="basis-[50%] tracking-wider leading-loose text-justify">{content}</p>
         </div>
     );
 }

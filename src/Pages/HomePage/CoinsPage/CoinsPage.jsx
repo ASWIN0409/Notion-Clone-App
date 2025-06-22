@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import fetchCoins from "../../../api/fetchCoins";
+import fetchCoins from "../../../Services/fetchCoins";
 import { useContext, useEffect, useState } from "react";
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import CoinsCard from "../../../Components/CardComponents/CoinsCard/CoinsCard";

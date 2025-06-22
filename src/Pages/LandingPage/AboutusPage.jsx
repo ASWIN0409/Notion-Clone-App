@@ -79,19 +79,19 @@ function AboutUsPage() {
                  />
                  <ImageCard3
                 src="tech-crunch.png"
-                href="https://www.fastcompany.com/91037133/workplace-most-innovative-companies-2024"
+                href="https://techcrunch.com/2022/01/25/oktas-8th-businesses-at-work-cloud-services-report-shows-increasing-heterogeneity/"
                  />
                  <ImageCard3
                 src="new-york-times.avif"
-                href="https://www.forbes.com/sites/kenrickcai/2024/04/11/10-billion-productivity-startup-notion-wants-to-build-your-ai-everything-app/"
+                href="https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html/"
                  />
                  <ImageCard3
                 src="wall-street-journal.avif"
-                href="https://www.fastcompany.com/91037133/workplace-most-innovative-companies-2024"
+                href="https://www.wsj.com/articles/the-only-app-you-need-for-work-life-productivity-1521640800"
                  />
                  <ImageCard3
                 src="verge.png"
-                href="https://www.fastcompany.com/91037133/workplace-most-innovative-companies-2024"
+                href="https://www.theverge.com/2020/5/19/21261811/note-taking-app-notion-free-plan-personal-use-unlimited-blocks"
                  />
             </div>
 
