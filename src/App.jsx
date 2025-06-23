@@ -1,12 +1,14 @@
+import { Provider } from "react-redux";
 import Routing from "./Routing/Routing";
+import { store } from "./Store/Slice/Store";
 
 
 function App() {
 
   return (
-    <div className="">
+    <Provider store={store}>
       <Routing />
-    </div>
+    </Provider>
   )
 }
 

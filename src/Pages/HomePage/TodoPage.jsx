@@ -1,5 +1,6 @@
-import TodoList from "../../Components/TodoList/TodoList";
+// import TodoList from "../../Components/TodoList/TodoList";
 import EventNoteIcon from '@mui/icons-material/EventNote';
+import TodoList from "../../Components/TodoList/TodoList";
 
 function TodoPage() {
     return(

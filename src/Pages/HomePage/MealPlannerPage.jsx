@@ -10,10 +10,10 @@ function MealPlannerPage() {
         const saved = localStorage.getItem("mealPlan");
         return saved ? JSON.parse(saved) : initialMealData;
     })
-    const [newMeal, setNewMeal] = useState("");
-    const [selectedDay, setSelectedDay] = useState("Monday");
-    const [edit, setEdit] = useState({ day: null, index: null });
-    const [editValue, setEditValue] = useState("");
+    const [newMeal, setNewMeal] = useState("");  //adding new meal
+    const [selectedDay, setSelectedDay] = useState("Monday");  //for selecting days
+    const [edit, setEdit] = useState({ day: null, index: null });   //for editing
+    const [editValue, setEditValue] = useState("");  // setting editted values
 
     useEffect(() => {
         localStorage.setItem("mealPlan", JSON.stringify(mealPlan));
@@ -61,7 +61,7 @@ function MealPlannerPage() {
 
             <div className='flex flex-col items-center justify-center gap-3 p-2 md:flex-row '>
                 <select
-                    className='dark:bg-[#3e3e3e] p-2 m-1 rounded-md w-28'
+                    className='dark:bg-[#3e3e3e] p-2 m-1 rounded-md w-32'
                     value={selectedDay}
                     onChange={(e) => setSelectedDay(e.target.value)}
                 >
