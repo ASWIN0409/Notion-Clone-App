@@ -8,7 +8,7 @@ function HomeLayout() {
     const { user } = useContext(GlobalContext);
 
     return (
-        <div className="flex min-h-screen dark:text-gray-300 dark:bg-[#1F1F1F]">
+        <div className="flex min-h-screen dark:text-gray-300 text-[#3e3e3e] dark:bg-[#1F1F1F]">
             <DesktopSidebar />
             <div className="z-10 w-full">
                 <Outlet />

@@ -10,7 +10,7 @@ function WelcomePage() {
              className='text-yellow-400'/>
 
             <h1 
-            className='text-6xl font-black '
+            className='text-6xl font-black text-center'
             contentEditable={true}>
                 Welcome to Notion!
             </h1>
