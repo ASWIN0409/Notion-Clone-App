@@ -5,6 +5,6 @@ export default async function fetchBooks() {
         const response = await axios.get("https://www.dbooks.org/api/search/python");
         return response.data;
     } catch (error) {
-        alert(error.message);
+        console.error(error.message);
     }
 }

@@ -4,6 +4,8 @@ import PrivateRoute from "../Pages/EntryPage/AuthPage/PrivateRoute";
 import { lazy, Suspense } from "react";
 import HomeLayout from "../Pages/Layout/HomeLayout";
 import { Facebook } from 'react-content-loader'
+import { ErrorBoundary } from "react-error-boundary";
+import CustomErrorBoundary from "../Components/ErrorBoundary/CustomErrorBoundary";
 
 const LandingPage = lazy(() => import("../Pages/LandingPage/LandingPage"));
 const AboutUsPage = lazy(() => import("../Pages/LandingPage/AboutUsPage/AboutusPage"));
@@ -40,10 +42,22 @@ function Routing() {
                     <Route path="welcome" element={<WelcomePage />} />
                     <Route path="inbox" element={<InboxPage />} />
                     <Route path="todo" element={<TodoPage />} />
-                    <Route path="books" element={<BooksPage />} />
+                    <Route path="books" element={
+                        <ErrorBoundary FallbackComponent={CustomErrorBoundary}>
+                            <BooksPage />
+                        </ErrorBoundary>
+                    } />
                     <Route path="meals" element={<MealPlannerPage />} />
-                    <Route path="coins" element={<CoinsPage />} />
-                    <Route path="coins/:coinId" element={<CoinDetailPage />} />
+                    <Route path="coins" element={
+                        <ErrorBoundary FallbackComponent={CustomErrorBoundary}>
+                            <CoinsPage />
+                        </ErrorBoundary>
+                    } />
+                    <Route path="coins/:coinId" element={
+                        <ErrorBoundary FallbackComponent={CustomErrorBoundary}>
+                            <CoinDetailPage />
+                        </ErrorBoundary>
+                    } />
                     <Route path="settings" element={<SettingsPage />} />
                     <Route path="trash" element={<TrashPage />} />
 

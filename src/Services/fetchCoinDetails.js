@@ -5,6 +5,6 @@ export default async function fetchCoinDetails(coinId) {
         const response = await axiosInstance.get(`${coinId}`);
     return response.data;
     } catch (error) {
-        alert(error.message);
+        console.error(error.message);
     }
 }
