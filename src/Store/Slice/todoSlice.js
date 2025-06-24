@@ -18,16 +18,20 @@ const todoSlice = createSlice({
             state.newTask = action.payload;
         },
         addNewTask: (state) => {
-            console.log("add new task reducer triggered");
-            const task = state.newTask.trim();
-            if (!task) return;
+            const taskText = state.newTask.trim();
+            if (!taskText) return;
 
             const day = state.weekDay;
             if (!state.todoList[day]) {
                 state.todoList[day] = [];
             }
-            state.todoList[day].push(task);
-            state.newTask= "";
+
+            state.todoList[day].push({
+                task: taskText,
+                completed: false,
+            });
+
+            state.newTask = "";
         },
         setEditValueHandler: (state, action) => {
             state.editValue = action.payload;
@@ -43,7 +47,10 @@ const todoSlice = createSlice({
             if (!value) return;
 
             const updatedTasks = [...state.todoList[day]];
-            updatedTasks[index] = value;
+            updatedTasks[index] = {
+                ...updatedTasks[index],
+                task: value,
+            };
 
             state.todoList[day] = updatedTasks;
             state.editTask = { day: null, index: null };
@@ -52,12 +59,33 @@ const todoSlice = createSlice({
         handleTaskDelete: (state, action) => {
             const { day, index } = action.payload;
             state.todoList[day] = state.todoList[day].filter((_, i) => i !== index);
-        }
-
-    }
-
+        },
+        toggleTaskCompletion: (state, action) => {
+            const { day, index } = action.payload;
+            const task = state.todoList[day][index];
+            if (task) {
+                state.todoList[day][index] = {
+                    ...task,
+                    completed: !task.completed,
+                };
+            }
+        },
+        setInitialTodoList: (state, action) => {
+            state.todoList = action.payload;
+        },
+    },
 });
 
-export const { setWeekday, setNewTask, addNewTask, setEditValueHandler, startEditingHandler, saveEditHandler, handleTaskDelete } = todoSlice.actions;
+export const {
+    setWeekday,
+    setNewTask,
+    addNewTask,
+    setEditValueHandler,
+    startEditingHandler,
+    saveEditHandler,
+    handleTaskDelete,
+    toggleTaskCompletion,
+    setInitialTodoList
+} = todoSlice.actions;
 
 export default todoSlice.reducer;
