@@ -46,7 +46,17 @@ export default function GlobalProvider({ children }) {
     }
 
     return (
-        <GlobalContext.Provider value={{ formData, setFormData, user, currency, setCurrency, theme, toggleTheme, sidebarToggle, setSidebarToggle }}>
+        <GlobalContext.Provider value={{
+            formData,
+            setFormData,
+            user,
+            currency,
+            setCurrency,
+            theme,
+            toggleTheme,
+            sidebarToggle,
+            setSidebarToggle
+        }}>
             {children}
         </GlobalContext.Provider>
     );
