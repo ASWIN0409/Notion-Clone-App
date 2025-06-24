@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function Button({ text, className }) {
+function Button1({ text, className }) {
 
     const navigate = useNavigate();
 
@@ -22,4 +22,4 @@ function Button({ text, className }) {
     );
 }
 
-export default Button;
+export default Button1;

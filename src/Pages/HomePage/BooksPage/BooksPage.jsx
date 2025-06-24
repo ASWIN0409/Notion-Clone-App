@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import fetchBooks from "../../Services/fetchBooks";
-import BooksCard from "../../Components/CardComponents/BooksCard/BooksCard";
+import fetchBooks from "../../../Services/fetchBooks";
+import BooksCard from "../../../Components/CardComponents/BooksCard/BooksCard";
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import { Facebook } from 'react-content-loader'
 
 function BooksPage() {
 
@@ -12,7 +13,7 @@ function BooksPage() {
         staleTime: 1000 * 60 * 2,
     });
 
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <div className="p-10"><Facebook /></div>
     if (isError) return <p>Error: {error.message}</p>
 
     return (

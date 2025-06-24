@@ -1,5 +1,5 @@
-import Button from "../Button/Button";
-import Card3 from "../CardComponents/Card3/Card3";
+import Button1 from "../../Button/Button1/Button1";
+import Card3 from "../../CardComponents/Card3/Card3";
 
 function NotionDropdown() {
     return (
@@ -41,7 +41,7 @@ function NotionDropdown() {
             <div className="basis-[25%] bg-gray-200 rounded-md">
                 <div className="basis-[50%] flex flex-col gap-3 p-2 justify-center items-center">
                     <h3>Try the Notion desktop app for a faster experience</h3>
-                    <Button text="Download App" />
+                    <Button1 text="Download App" />
                 </div>
                 <div className="basis-[50%]">
                     <img src="notion_background.avif" alt="" />

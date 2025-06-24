@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { GlobalContext } from "../../Context/GlobalContext";
-import SidebarButton from "../Button/SidebarButton";
+import { GlobalContext } from "../../../Context/GlobalContext";
+import SidebarButton from "../../Button/SidebarButton/SidebarButton";
 import { useNavigate } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -54,7 +54,6 @@ function MenuDropdown() {
                 className="flex justify-between gap-2 p-2 mx-2 my-1 font-light text-gray-600 rounded-md dark:hover:bg-[#2F2F2F] dark:text-gray-300 dark:bg-[#262626] text-md hover:bg-gray-100 ">
                 <div>Private</div>
             </div>
-
             <SidebarButton
                 onClick={() => navigate("welcome")}
                 icon={WavingHandOutlinedIcon}

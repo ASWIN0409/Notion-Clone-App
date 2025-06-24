@@ -1,5 +1,5 @@
-import ImageCard2 from "../../Components/CardComponents/ImageCard2/ImageCard2";
-import ImageCard3 from "../../Components/CardComponents/ImageCard3/ImageCard3";
+import ImageCard2 from "../../../Components/CardComponents/ImageCard2/ImageCard2";
+import ImageCard3 from "../../../Components/CardComponents/ImageCard3/ImageCard3";
 
 function AboutUsPage() {
     return (

@@ -1,12 +1,12 @@
-import Button from "../../Components/Button/Button";
 import MicRoundedIcon from '@mui/icons-material/MicRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import AdsClickOutlinedIcon from '@mui/icons-material/AdsClickOutlined';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import BusinessRoundedIcon from '@mui/icons-material/BusinessRounded';
-import Button2 from "../../Components/Button/Button2";
+import Button2 from "../../Components/Button/Button2/Button2";
 import ImageCard from "../../Components/CardComponents/ImageCard/ImageCard";
 import Card2 from "../../Components/CardComponents/Card2/Card2";
+import Button1 from '../../Components/Button/Button1/Button1';
 
 function LandingPage() {
     
@@ -18,8 +18,8 @@ function LandingPage() {
                     <h1 className="text-4xl font-bold lg:text-6xl">The AI workspace that works for you.</h1>
                     <p className="text-lg lg:text-2xl my-7">One place where teams find every answer, automate the busywork, and get projects done.</p>
                     <div className="flex flex-col w-32 gap-4 ">
-                        <Button text="Get Notion free" />
-                        <Button
+                        <Button1 text="Get Notion free" />
+                        <Button1
                             className="w-full h-full p-2 font-thin text-blue-500 bg-blue-100 rounded-md hover:bg-blue-200"
                             text="Request a demo"
                         />

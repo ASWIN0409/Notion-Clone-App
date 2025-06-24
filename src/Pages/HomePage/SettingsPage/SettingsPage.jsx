@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import ThemeButton from "../../Components/Button/ThemeButton";
+import ThemeButton from "../../../Components/Button/ThemeButton/ThemeButton";
 import SettingsIcon from '@mui/icons-material/Settings';
-import { GlobalContext } from "../../Context/GlobalContext";
+import { GlobalContext } from "../../../Context/GlobalContext";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useNavigate } from "react-router-dom";
-import ProfileDropdownButton from "../../Components/Button/ProfileDropdownButton";
-import { auth } from "../../firebaseConfig";
+import ProfileDropdownButton from "../../../Components/Button/ProfileDropdownButton/ProfileDropdownButton";
+import { auth } from "../../../firebaseConfig";
 import { signOut } from "firebase/auth";
 
 function SettingsPage() {

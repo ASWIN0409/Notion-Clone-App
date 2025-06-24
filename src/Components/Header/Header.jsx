@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Button from "../Button/Button";
-import NavButton from "../Button/NavButton";
-import NotionDropdown from "../Dropdown/NotionDropdown";
+import NavButton from "../Button/NavButton/NavButton";
+import NotionDropdown from "../Dropdown/NotionDropdown/NotionDropdown";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
+import Button1 from "../Button/Button1/Button1";
 
 function Header() {
 
@@ -48,19 +48,19 @@ function Header() {
             {
                 !toggleMenu &&
                 <div className=" lg:hidden flex md:w-[30%] w-full md:justify- justify-start mr-10">
-                    <Button
+                    <Button1
                         className="hidden p-2 font-thin text-blue-500 bg-blue-100 rounded-md md:h-full md:block lg:block hover:bg-blue-200"
                         text="Log In"
                     />
-                    <Button text="Get Notion" />
+                    <Button1 text="Get Notion" />
                 </div>
             }
             <div className="lg:w-[20%] lg:flex md:w-[30%] w-full hidden md:justify- justify-start lg:h-[70%] mr-10">
-                <Button
+                <Button1
                     className="hidden p-2 font-thin text-blue-500 bg-blue-100 rounded-md md:h-full md:block lg:block hover:bg-blue-200"
                     text="Log In"
                 />
-                <Button text="Get Notion" />
+                <Button1 text="Get Notion" />
             </div>
 
             {/* small & medium screen navbar/sidebar */}

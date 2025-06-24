@@ -1,27 +1,29 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../Pages/Layout/MainLayout";
-import PrivateRoute from "../Pages/EntryPage/PrivateRoute";
+import PrivateRoute from "../Pages/EntryPage/AuthPage/PrivateRoute";
 import { lazy, Suspense } from "react";
 import HomeLayout from "../Pages/Layout/HomeLayout";
-import WelcomePage from "../Pages/HomePage/WelcomePage";
-import HomePage from "../Pages/HomePage/HomePage";
-import InboxPage from "../Pages/HomePage/InboxPage";
-import TodoPage from "../Pages/HomePage/TodoPage";
-import BooksPage from "../Pages/HomePage/BooksPage";
-import MealPlannerPage from "../Pages/HomePage/MealPlannerPage";
-import SettingsPage from "../Pages/HomePage/SettingsPage";
-import TrashPage from "../Pages/HomePage/TrashPage";
-import CoinsPage from "../Pages/HomePage/CoinsPage/CoinsPage";
-import CoinDetailPage from "../Pages/HomePage/CoinsPage/CoinDetailPage";
-import AboutUsPage from "../Pages/LandingPage/AboutusPage";
+import { Facebook } from 'react-content-loader'
 
 const LandingPage = lazy(() => import("../Pages/LandingPage/LandingPage"));
-const LoginPage = lazy(() => import("../Pages/EntryPage/LoginPage"));
-const RegisterPage = lazy(() => import("../Pages/EntryPage/RegisterPage"));
+const AboutUsPage = lazy(() => import("../Pages/LandingPage/AboutUsPage/AboutusPage"));
+const LoginPage = lazy(() => import("../Pages/EntryPage/LoginPage/LoginPage"));
+const RegisterPage = lazy(() => import("../Pages/EntryPage/RegisterPage/RegisterPage"));
+const WelcomePage = lazy(() => import("../Pages/HomePage/WelcomePage/WelcomePage"));
+const HomePage = lazy(() => import("../Pages/HomePage/HomePage"));
+const InboxPage = lazy(() => import("../Pages/HomePage/InboxPage/InboxPage"));
+const TodoPage = lazy(() => import("../Pages/HomePage/TodoPage/TodoPage"));
+const BooksPage = lazy(() => import("../Pages/HomePage/BooksPage/BooksPage"));
+const MealPlannerPage = lazy(() => import("../Pages/HomePage/MealPlannerPage/MealPlannerPage"));
+const SettingsPage = lazy(() => import("../Pages/HomePage/SettingsPage/SettingsPage"));
+const TrashPage = lazy(() => import("../Pages/HomePage/TrashPage/TrashPage"));
+const CoinsPage = lazy(() => import("../Pages/HomePage/CoinPage/CoinsPage/CoinsPage"));
+const CoinDetailPage = lazy(() => import("../Pages/HomePage/CoinPage/CoinDetailPage/CoinDetailPage"));
+
 
 function Routing() {
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="p-10"> <Facebook /></div>}>
             <Routes>
                 <Route path="/" element={<MainLayout />} >
                     <Route index element={<LandingPage />} />

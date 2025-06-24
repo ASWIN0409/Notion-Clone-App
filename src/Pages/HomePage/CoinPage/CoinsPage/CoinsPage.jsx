@@ -1,11 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
-import fetchCoins from "../../../Services/fetchCoins";
+import fetchCoins from "../../../../Services/fetchCoins";
 import { useContext, useEffect, useState } from "react";
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import CoinsCard from "../../../Components/CardComponents/CoinsCard/CoinsCard";
-import CoinsPageButton from "../../../Components/Button/CoinsPageButton";
-import { GlobalContext } from "../../../Context/GlobalContext";
-import CoinsMobileCard from "../../../Components/CardComponents/CoinsMobileCard/CoinsMobileCard";
+import CoinsCard from "../../../../Components/CardComponents/CoinsCard/CoinsCard";
+import CoinsPageButton from "../../../../Components/Button/CoinsPageButton/CoinsPageButton";
+import { GlobalContext } from "../../../../Context/GlobalContext";
+import CoinsMobileCard from "../../../../Components/CardComponents/CoinsMobileCard/CoinsMobileCard";
+import { Facebook } from 'react-content-loader'
 
 function CoinsPage() {
 
@@ -35,7 +36,7 @@ function CoinsPage() {
         staleTime: 1000 * 60 * 2,
     });
 
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <div className="p-10"><Facebook /></div>
     if (isError) return <p>Error: {error.message}</p>
 
     return (

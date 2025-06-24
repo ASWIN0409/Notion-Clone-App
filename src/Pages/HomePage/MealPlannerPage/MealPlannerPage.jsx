@@ -1,5 +1,5 @@
 import FlatwareIcon from '@mui/icons-material/Flatware';
-import MealList from "../../Components/MealList/MealList";
+import MealList from "../../../Components/MealList/MealList";
 
 function MealPlannerPage() {
     return (

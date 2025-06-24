@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { GlobalContext } from "../../Context/GlobalContext";
-import ProfileDropdownButton from "../Button/ProfileDropdownButton";
+import { GlobalContext } from "../../../Context/GlobalContext";
+import ProfileDropdownButton from "../../Button/ProfileDropdownButton/ProfileDropdownButton";
 import { useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
-import { auth } from "../../firebaseConfig";
+import { auth } from "../../../firebaseConfig";
 
 function ProfileDropdown() {
 

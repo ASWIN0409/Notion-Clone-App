@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { GlobalContext } from "../../Context/GlobalContext";
+import { GlobalContext } from "../../../Context/GlobalContext";
 
 function ThemeButton() {
 

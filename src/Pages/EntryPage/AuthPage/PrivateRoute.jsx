@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Navigate } from "react-router-dom";
-import { GlobalContext } from "../../Context/GlobalContext";
+import { GlobalContext } from "../../../Context/GlobalContext";
 
 function PrivateRoute({children}) {
 

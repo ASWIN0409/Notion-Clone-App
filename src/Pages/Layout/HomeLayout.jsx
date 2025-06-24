@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../Context/GlobalContext";
 import { Outlet } from "react-router-dom";
-import DesktopSidebar from "../../Components/Sidebar/Sidebar";
+import DesktopSidebar from "../../Components/Sidebar/DesktopSidebar/DesktopSidebar";
 
 function HomeLayout() {
 

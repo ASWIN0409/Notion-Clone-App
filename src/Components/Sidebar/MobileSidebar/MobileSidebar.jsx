@@ -1,7 +1,7 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import { useContext, useState } from 'react';
-import MenuDropdown from '../Dropdown/MenuDropdown';
-import { GlobalContext } from '../../Context/GlobalContext';
+import MenuDropdown from '../../Dropdown/MenuDropdown/MenuDropdown';
+import { GlobalContext } from '../../../Context/GlobalContext';
 
 function MobileSidebar() {
 

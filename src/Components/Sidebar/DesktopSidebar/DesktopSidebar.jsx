@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import { GlobalContext } from "../../Context/GlobalContext";
+import { GlobalContext } from "../../../Context/GlobalContext";
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
@@ -15,9 +15,9 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { useNavigate } from "react-router-dom";
-import ProfileDropdown from "../Dropdown/ProfileDropdown";
-import SidebarButton from "../Button/SidebarButton";
-import MobileSidebar from "./MobileSidebar";
+import ProfileDropdown from "../../Dropdown/ProfileDropdown/ProfileDropdown";
+import SidebarButton from "../../Button/SidebarButton/SidebarButton";
+import MobileSidebar from "../MobileSidebar/MobileSidebar";
 
 
 function DesktopSidebar() {
