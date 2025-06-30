@@ -86,7 +86,7 @@ function LandingPage() {
             {/* 7th section */}
             <div className="w-full h-full text-center">
                 <h3 className="text-6xl font-bold">One space for every team.</h3>
-                <div className="flex items-center justify-center gap-4 m-5">
+                <div className="flex flex-col items-center justify-center gap-4 m-5 md:flex-row">
                     <Button2
                         className="p-2 text-sm font-thin bg-gray-200 cursor-pointer hover:bg-white rounded-xl "
                         text="Product"

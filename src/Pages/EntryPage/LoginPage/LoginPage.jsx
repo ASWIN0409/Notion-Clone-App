@@ -45,8 +45,8 @@ function LoginPage() {
 
     return (
         <div className="flex flex-col items-center justify-center w-screen h-screen">
-            <h2 className="text-3xl font-bold ">Think it. Make it.</h2>
-            <p className="mb-2 text-3xl font-bold text-gray-400">Log in to your Notion account</p>
+            <h2 className="text-3xl font-bold text-center ">Think it. Make it.</h2>
+            <p className="mb-2 text-3xl font-bold text-center text-gray-400">Log in to your Notion account</p>
             <div className="w-[60vw] h-[60vh] lg:w-[50vw] lg:h-[50vh] mx-auto flex">
                 <form onSubmit={onSubmitHandler}
                     className="flex flex-col gap-4 p-4 m-auto border rounded-md w-96"

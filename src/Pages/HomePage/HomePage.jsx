@@ -36,7 +36,7 @@ function HomePage() {
                 className="block text-[#3E3E3E]  dark:text-gray-300 w-3/4 p-8 mx-auto mb-10 text-lg border border-gray-200 resize-none md:mb-12 lg:mb-20 dark:bg-[#3E3E3E] rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-400"
             />
 
-            <div className="grid grid-cols-2 gap-x-2 md:grid-cols-3 lg:grid-cols-5 gap-y-9 justify-around w-[80%] mx-auto  dark:text-black">
+            <div className="grid grid-cols-2 justify-evenly gap-x-2 md:grid-cols-3 lg:grid-cols-5 gap-y-9 w-[80%] mx-auto  dark:text-black">
                 <HomePageCard
                 icon={WavingHandIcon}
                 className="mt-5 text-yellow-400" 

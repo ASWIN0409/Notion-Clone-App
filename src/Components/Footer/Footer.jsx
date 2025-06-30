@@ -10,7 +10,7 @@ import XIcon from '@mui/icons-material/X';
 function Footer() {
     return (
         <footer className="bottom-0 w-[95vw] mx-auto border-t-2  border-gray-200 h-96">
-            <div className="h-full w-[80vw] mx-auto flex items-center justify-center">
+            <div className="h-full w-[80vw] grid-cols-1  mx-auto grid md:grid-cols-3 gap-10 lg:grid-cols-5 items-center justify-center">
 
                 {/* Column 1 */}
                 <div className="h-[80%] w-[25%]flex flex-col gap-10 p-12">
