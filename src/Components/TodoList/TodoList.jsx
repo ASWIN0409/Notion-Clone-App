@@ -6,6 +6,7 @@ import { addNewTask, setWeekday, setNewTask, setEditValueHandler, setInitialTodo
 import { useEffect } from 'react';
 
 function TodoList() {
+    
     const data = useSelector((state) => state.todo);
     const dispatch = useDispatch();
 

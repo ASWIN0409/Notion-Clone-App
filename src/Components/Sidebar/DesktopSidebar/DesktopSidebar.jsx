@@ -30,20 +30,20 @@ function DesktopSidebar() {
 
     const navigate = useNavigate();
 
-    function handleClick() {
+    const handleClick = () => {
         setProfileToggle(!profileToggle);
-    }
+    };
 
-    function handleMouseDown() {
+    const handleMouseDown = () => {
         sidebarResizingRef.current = true;
-    }
+    };
 
-    function handleMouseMove(e) {
+    const handleMouseMove = (e) => {
         if (!sidebarResizingRef.current) return;
         setSidebarWidth(Math.min(Math.max(300, e.clientX), 500));
-    }
+    };
 
-    function handleMouseUp() {
+    const handleMouseUp = () => {
         sidebarResizingRef.current = false;
     }
 

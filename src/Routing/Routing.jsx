@@ -60,6 +60,7 @@ function Routing() {
                     } />
                     <Route path="settings" element={<SettingsPage />} />
                     <Route path="trash" element={<TrashPage />} />
+                    <Route path="*" element={<div className="text-red-500">Page not found</div>} />
 
                 </Route>
             </Routes>
