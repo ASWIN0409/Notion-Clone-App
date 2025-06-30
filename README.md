@@ -1,12 +1,75 @@
-# React + Vite
+# 🧠 Notion Clone App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Notion-inspired productivity web app built with **React + Vite**. It offers a clean and modern interface for personal organisation, planning, reading, and learning — all in one place.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✅ Core Features
+- 🌓 **Dark/Light Theme Toggle** – Automatically remembered across sessions.
+- 📁 **Resizable Sidebar** – Adjust the width of the sidebar as you like.
 
-## Expanding the ESLint configuration
+### 🔐 Authentication
+- 🔐 **Firebase Authentication** – Register, Login, and Logout functionality using Firebase.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📋 To-Do List
+- ➕ Add tasks for each day of the week
+- ✏️ Edit or update existing tasks
+- ✅ Toggle task completion
+- 🗑️ Delete tasks
+
+### 🍱 Meal Planner
+- 📅 Plan meals for the week
+- ➕ Add, ✏️ Edit, and 🗑️ Delete meals
+- Organised view by weekday
+
+### 📚 Reading Page
+- 📖 Browse books from online sources
+- ⬇️ Download books to read
+- Clean and readable UI for reading books
+
+### 🪙 Cryptocurrency Page
+- 📈 View real-time prices of cryptocurrencies
+- 💰 Learn basic details of different crypto coins
+- Auto-refreshing coin data with visuals
+
+## 📷 Screenshots
+
+### 🌓 Dark Mode UI
+![Dark Mode](./public/screenshots/dark-mode.png)
+![Light Mode](./public/screenshots/light-mode.png)
+
+### ✅ Todo List Feature
+![Todo List](./public/screenshots/todo-list.png)
+
+### 🍽️ Meal Planner
+![Meal Planner](./public/screenshots/meal-planner.png)
+
+### 📚 Reading Page
+![Reading Books](./public/screenshots/reading-list.png)
+
+### 🪙 Crypto Tracker
+![Crypto Page](./public/screenshots/crypto-currency-page.png)
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React.js** (with Vite)
+- 🧠 **Redux Toolkit & Context API** – State management
+- 🎨 **Tailwind CSS** – Styling & Responsive designing
+- ☁️ **Firebase** – Auth and backend integration
+- 📦 **React Router** – Navigation
+- 📚 **External APIs** – For books and crypto data using React Query
+- 💤 **React Lazy/Suspense** – Lazy load components
+- 🛡️ **react-error-boundary** – Graceful error handling
+
+## 🧪 Coming Soon
+- 📊 Analytics page
+- 📄 Expand app with more planning and utility pages
+- 📝 Rich text notes
+- ⏰ Reminder and notification system
+
+📜 License
+This project is licensed under the MIT License.
+
+🙌 Inspiration
+Inspired by Notion, this project aims to combine productivity tools, planning features, and reading/learning resources into one modern app.
+
