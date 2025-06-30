@@ -22,7 +22,7 @@ function BooksPage() {
                 <AutoStoriesIcon fontSize="large" className="text-red-400"/>
                 <h1 className="text-3xl font-black text-center text-red-600">Reading List</h1>
             </div>
-            <ul className="grid grid-cols-1 gap-20 w-[90%] mx-auto p-10 md:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-20 w-[90%] mx-auto md:grid-cols-2 lg:grid-cols-3">
                 {data?.books?.map((book) => (
                     <BooksCard key={book?.id} book={book} />
                 ))}
